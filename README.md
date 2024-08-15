@@ -8,6 +8,8 @@ Despite this, these large generative AIs are versatile and can be configured to 
 
 Here I will be attempting to create an AI idea generator, that will spit out some interesting aircraft designs along with their names.
 
+(Try it here)[https://larmbs.github.io/idea_generator/]
+
 ## Setup
 
 The first step in configuring an AI is to choose the right one. I have personally decided to use Google’s Gemini, but feel free to use the AI of your choice.
