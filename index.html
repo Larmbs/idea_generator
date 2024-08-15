@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI aircraft idea generator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <main class="border">
+      <form id="api-key-form">
+        <button type="submit" value="Generate">Generate</button>
+        <div>
+          <label for="api-key">Google Gemini API-Key:</label>
+          <input type="text" id="api-key" name="api-key" />
+        </div>
+      </form>
+      <div id="output">
+        <h1>Welcome...</h1>
+        <h2>This is an AI idea generator</h2>
+        <p>
+          To generate a Google Gemini API Key take a look
+          <a target="_blank" href="https://aistudio.google.com/app/apikey"
+            >here</a
+          >.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
