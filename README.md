@@ -1,4 +1,4 @@
-# Configuring AI
+# Prompt Engineering
 
 Artificial Intelligence (AI) is one of the most significant advancements of our time. It has transformed how we interact with the web, offering a wide array of services. Generative AIs like ChatGPT, Gemini, and Llama have played a pivotal role in this expansion. However, the field of deep learning is incredibly costly, demanding vast amounts of computing power, time, and energy. For the average person, AI can feel out of reach.
 
