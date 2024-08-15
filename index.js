@@ -2,12 +2,11 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 
 var genAI, model, prev_key;
 
-const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
 const api_key_form = document.getElementById("api-key-form");
 
 const output = document.getElementById("output");
 
+// When form is submitted
 api_key_form.addEventListener("submit", async function (e) {
   e.preventDefault();
   const formData = new FormData(e.target);
@@ -23,6 +22,7 @@ api_key_form.addEventListener("submit", async function (e) {
   }
 });
 
+// Function containing the prompt
 async function gen_idea() {
   output.innerHTML = null;
 
@@ -47,6 +47,7 @@ async function gen_idea() {
   output.insertAdjacentHTML("beforeend", text);
 }
 
+// Takes in a prompt(String) returns a response(String)
 async function generate(prompt) {
   const result = await model.generateContent(prompt);
   const response = await result.response;
@@ -54,6 +55,8 @@ async function generate(prompt) {
   return text;
 }
 
+// Returns a random letter
 function random_char() {
+  const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   return chars.charAt(Math.floor(Math.random() * chars.length));
 }
